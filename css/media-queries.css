@@ -1,143 +1,202 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 26px;
+}
+.alert-info {
+    box-sizing: border-box;
+    border: 2px solid lightgrey;
+    background-color: skyblue;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+}
 
+.alert-info a {
+    font-size: small;
+    text-decoration: none;
+    color: black;
+}
 
+h1 {
+    text-align: center;
+}
 
-    * {
-        box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
-    }
-    div a {
-        background-color: skyblue;
-        border: 2px solid lightgray;
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
 
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        margin: .5em;
+}
 
-    }
-
-    .alert-info {
-        display: flex;
-        flex-direction: column;
-    }
-    h1 {
-
-    }
-    nav  {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        color: white;
-        border: none;
-
-        /*padding-left: 5px;*/
-        /*padding-right: 5px;*/
-
-    }
-    h1 {
-        text-align: center;
-        font-weight: bold;
-    }
-    .nav-links li {
-        background: lightgrey;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        margin: .5em;
-        /*width: 100%;*/
-    }
-
-    .nav-links {
-        margin: 0;
-        padding: 0;
-    }
-
-.header-img{
-    height: auto;
-    justify-content: inherit;
-    align-items: inherit;
+.nav-links li {
+    box-sizing: border-box;
+    background: lightgrey;
+    text-align: center;
+    width: 100%;
+    margin: 5px 0;
+    padding: 12px;
+    font-size: small;
 }
 
 img {
-    image-rendering: -webkit-crisp-edges;
-}
-    div img {
-        width: 100%;
-        display: block;
-        /*justify-content: inherit;*/
-        /*align-items: inherit;*/
-        /*flex-direction: column;*/
-        /*width: 100%;*/
-        /*height: auto;*/
-        /*padding: 0;*/
-
-
-        /*display: inherit;*/
-        /*align-content: center;*/
-        /*justify-content: space-evenly;*/
-    }
-#main {
-    font-weight: bold;
-}
-.sub-section {
-    font-style: italic ;
-}
-
-.footer  {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    height: 60px;
-    background-color: #ffffff;
-    color: #000000;
-    padding: .5em;
-    display: flex;
+}
+
+.sub-section {
+    font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        flex-direction: row;
+    }
+
+    .nav-links li {
+        background: none;
+    }
+    .main {
+        width: 55%;
+    }
+    .sub-section {
+        width: 35%;
+    }
+    .header-img {
+        width: 100%;
+    }
+
+    .hidden-on-desktop {
+        display: none;
+    }
 }
 
 
-/* * {*/
-/*     !*box-sizing: border-box;*!*/
-/*     font-family: 'Montserrat', sans-serif;*/
-/* }*/
-/*   div a{*/
-/*        background-color: skyblue;*/
-/*        border: lightgray;*/
-/*        display: inline-block;*/
-/*        text-decoration: none;*/
-/*    }*/
-/*    nav {*/
-/*        box-sizing: border-box;*/
-/*        background-color: darkgrey;*/
-/*        display: flex;*/
-/*        justify-content: center;*/
-
-/*    }*/
-/*   */
-/*    nav ul li:nth-child(4){*/
-/*        color: deeppink;*/
-/*        box-decoration-break: slice;*/
-/*        padding: 2px;*/
-/*        margin: 0;*/
+/* our code */
+/* had trouble with img sizing and margin */
+/** {*/
+/*    box-sizing: border-box;*/
+/*    font-family: 'Montserrat', sans-serif;*/
 /*}*/
-/*    }*/
-/*    ul {*/
-/*        list-style: none;*/
-/*        padding: 0;*/
-/*        margin: 0;*/
 
+/*div a {*/
+/*    background-color: skyblue;*/
+/*    border: 2px solid lightgray;*/
+/*    text-decoration: none;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    padding: 10px;*/
+/*    margin: .5em;*/
+/*    color: black;*/
+/*}*/
+
+/*.alert-info {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+
+/*}*/
+
+/*nav  {*/
+/*    display: inline-block;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    color: blue;*/
+/*    border: none;*/
+/*}*/
+
+/*h1 {*/
+/*    text-align: center;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.nav-links li {*/
+/*    background: lightgrey;*/
+/*    list-style: none;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    padding: 10px;*/
+/*    margin: .5em;*/
+/*}*/
+
+/*.nav-links {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.header-img{*/
+/*    height: auto;*/
+/*    justify-content: inherit;*/
+/*    align-items: inherit;*/
+/*}*/
+
+/*img {*/
+/*    image-rendering: -webkit-crisp-edges;*/
+/*}*/
+
+/*div img {*/
+/*    width: 100%;*/
+/*    display: block;*/
+/*}*/
+
+/*#main {*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.sub-section {*/
+/*    font-style: italic ;*/
+/*}*/
+
+/*.footer  {*/
+/*    position: fixed;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    height: 60px;*/
+/*    background-color: #ffffff;*/
+/*    color: #000000;*/
+/*    padding: .5em;*/
+/*    display: flex;*/
+/*}*/
+/*a:hover {*/
+/*    color: blue;*/
+/*}*/
+/*@media screen and (min-width: 768px) {*/
+/*    body {*/
+/*        flex-direction: row;*/
+/*        flex-wrap: wrap;*/
+/*        justify-content: space-between;*/
 /*    }*/
 
-/*    h1 {*/
-/*        color: blue;*/
+/*    .nav-links {*/
+/*        flex-direction: row;*/
 /*    }*/
-/*    p {*/
-/*        color: red;*/
+
+/*    .nav-links li {*/
+/*        background: none;*/
 /*    }*/
+/*    .main {*/
+/*        width: 55%;*/
+/*    }*/
+/*    .sub-section {*/
+/*        width: 35%;*/
+/*    }*/
+/*    .header-img {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .hidden-on-desktop {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
